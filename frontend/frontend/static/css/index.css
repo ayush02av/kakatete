@@ -1,6 +1,6 @@
-/* body{
-    min-height: 100vh;
-    background: #fff;
+/* @media  and (min-width: 480px) {
+body{ background-color: white;
+  }
 } */
 .navigation {
 	position: fixed;
@@ -95,7 +95,7 @@
   .navigation ul li a .icon {
 	position: relative;
 	display: block;
-	min-width: 60px;
+	min-width: 10px;
 	height: 60px;
 	line-height: 70px;
 	text-align: center;
@@ -180,4 +180,49 @@
     height: 60px;
     width: 60px;
     font-size: 1.5em;
+}
+@media (max-width: 800px){
+	.navigation{
+		top: 5px;
+	left: 2px;
+	bottom: 5px;
+	width: 120px;
+
+	}
+	.navigation ul li a {
+		width: 10px;
+		position: relative;
+		font-size: 20px;
+		left: 25px;
+		text-align: center;
+	}
+	.navigation ul li a .icon{
+		size: 1em;
+		left: 5px;
+		text-align: left;
+		position: fixed;
+	}
+	.box{
+		top: 10px;
+		background: rgb(19, 233, 151);
+		left: 150px;
+		height: 500px;
+		width: 500px;
+		position: relative;
+	}
+	.chat{
+		top: 530px;
+		left: 160px;
+		height: 380px;
+		width: 400px;
+	}
+	.chatbox{
+		top: 760px;
+		left:160px ;
+		align-items: center;
+	}
+	.send{
+		top: 760px;
+		left: 410px;
+	}
 }

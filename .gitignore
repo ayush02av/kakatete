@@ -1,0 +1,5 @@
+frontend/media
+databaseupdate.py
+pushtogithub.py
+db.sqlite3
+staticfiles

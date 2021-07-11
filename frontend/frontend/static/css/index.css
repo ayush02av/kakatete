@@ -148,3 +148,36 @@
   {
 	  display: none;
   }
+  .box{
+    position: fixed;
+    top: 90px;
+    background: rgb(19, 233, 151);
+    left: 350px;
+    height: 600px;
+    width: 800px;
+
+}
+.chat{
+    position: fixed;
+    top: 90px;
+    background: rgb(19, 233, 151);
+    left: 1200px;
+    height: 600px;
+    width: 300px;
+
+}
+.chatbox{
+    position: fixed;
+    top: 665px;
+    left: 1200px;
+    width: 600px;
+    height: 100px;
+}
+.send{
+    position: fixed;
+    top: 663px;
+    left: 1450px;
+    height: 60px;
+    width: 60px;
+    font-size: 1.5em;
+}

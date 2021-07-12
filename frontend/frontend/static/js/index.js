@@ -1,11 +1,11 @@
 
 
-let menuToggle = document.querySelector('.toggle');
-let navigation = document.querySelector('.navigation');
-menuToggle.onclick = function(){
-    menuToggle.classlist.toggle('active');
-    navigation.classList.toggle('active');
-}
+// let menuToggle = document.querySelector('.toggle');
+// let navigation = document.querySelector('.navigation');
+// menuToggle.onclick = function(){
+//     menuToggle.classlist.toggle('active');
+//     navigation.classList.toggle('active');
+// }
 
     let list= document.querySelectorAll('.list');
     for (let i=0; i<list.length; i++){

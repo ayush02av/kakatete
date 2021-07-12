@@ -235,7 +235,7 @@ body{ background-color: white;
 	
 }
 .subheading{
-	left: 710px;
+	left: 700px;
 	top: 40px;
 	align-items: center;
 	position: fixed;
@@ -259,4 +259,27 @@ body{ background-color: white;
 	position: absolute;
 	color:black ;   
 	font-size: 34px;
+}
+.chess{
+	position: fixed;
+	top: 100px;
+	border: 1px solid rgb(16, 223, 44);
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+	
+}
+.ludo{
+	position: absolute;
+	top: 100px;
+	left: 650px;
+	
+}
+.scribble{
+	position: fixed;
+	top: 100px;
+	left: 1000px;
+	border-image: round;
+	size: 1px;
+
 }

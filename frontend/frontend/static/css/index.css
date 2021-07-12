@@ -226,3 +226,19 @@ body{ background-color: white;
 		left: 410px;
 	}
 }
+.heading{
+	left: 600px;
+	top: 10px;
+	align-items: center;
+	position: fixed;
+	font-size: 30px;
+	
+}
+.subheading{
+	left: 710px;
+	top: 40px;
+	align-items: center;
+	position: fixed;
+	font-size: 30px;
+	
+}

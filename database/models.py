@@ -25,3 +25,11 @@ class GameServer(models.Model):
 
 	def __str__(self):
 		return self.Server_Id.__str__()
+
+class GameServerMessage(models.Model):
+	Server_Connected = models.ForeignKey(Game, on_delete=models.CASCADE)
+	Player_Connected = models.ForeignKey(User, on_delete=models.CASCADE)
+	Message = models.TextField()
+
+	def __str__(self):
+		return self.Player_Connected.__str__() + " - " + self.Message

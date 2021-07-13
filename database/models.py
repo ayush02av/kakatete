@@ -7,7 +7,7 @@ UTC = pytz.utc
 datetimeNow = datetime.datetime.now(UTC)+datetime.timedelta(hours=5.5)
 
 class User(AbstractUser):
-	username = models.CharField(primary_key=True, error_messages={'unique': 'A user with that username already exists.'}, help_text='Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.', max_length=150, unique=True, validators=[django.contrib.auth.validators.UnicodeUsernameValidator()], verbose_name='username')
+	# username = models.CharField(primary_key=True, error_messages={'unique': 'A user with that username already exists.'}, help_text='Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.', max_length=150, unique=True, validators=[django.contrib.auth.validators.UnicodeUsernameValidator()], verbose_name='username')
 	userid = models.UUIDField(unique=True, default=uuid.uuid4, editable=False)
 
 class Game(models.Model):

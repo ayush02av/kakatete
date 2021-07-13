@@ -181,6 +181,12 @@ body{ background-color: white;
     width: 60px;
     font-size: 1.5em;
 }
+
+.game > input{
+	width: 100px;
+	height: 100px;
+}
+
 @media (max-width: 800px){
 	.navigation{
 		top: 5px;

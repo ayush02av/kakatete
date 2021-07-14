@@ -233,20 +233,15 @@ body{ background-color: white;
 	}
 }
 .heading{
-	left: 600px;
-	top: 10px;
-	align-items: center;
-	position: fixed;
+	justify-content: center;
+	text-align: center;
 	font-size: 30px;
 	
 }
 .subheading{
-	left: 700px;
-	top: 40px;
-	align-items: center;
-	position: fixed;
-	font-size: 30px;
-	
+	justify-content: center;
+	text-align: center;
+	font-size: 22px;
 }
 .login{
 	position: fixed;
@@ -266,30 +261,38 @@ body{ background-color: white;
 	color:black ;   
 	font-size: 34px;
 }
+
+:root{
+	--game-card-background: lightblue;
+	--game-card-hover-background: lightgreen;
+}
+
 .container{
 	background-image: 100%;
     display: inline-flex;
 	justify-content: center;
 	text-align: center;
-	margin-top: 150px;
-	/* height: 100px; */
+	margin-top: 50px;
 	width: 100%;
 }
 .container img{
 	border-radius: 10%;
 	width: 350px;
 	height: 300px;
-	border: 10px solid rgb(240, 119, 7);
+	/*border: 10px solid rgb(240, 119, 7);*/
     padding: 15px;
 }
 .container > div{
 	margin: 0 1.5%;
 	width: 30%;
-
+	box-shadow: 1px 0px 10px var(--game-card-background),
+				0px -1px 10px var(--game-card-background);
+	border-radius: 50px;
+	transition: 0.2s;
 }
 .container > div:hover{
-	box-shadow: 10px 10px 20px lightblue;
+	box-shadow: 10px 10px 20px var(--game-card-hover-background),
+				-1px -1px 20px var(--game-card-hover-background);
 	transition: 0.5s;
-
 }
 

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KakaTete</title>
-    <link rel="stylesheet" href="/static/css/index.css">
+    <link rel="stylesheet" href="static/css/index.css">
 </head>
 <body>
   <div class="heading">
@@ -34,10 +34,24 @@
           <b></b>
           <a href="#" >
             <span class="icon"><ion-icon name="game-controller-outline"></ion-icon></span>
-            <span class="title">Scribble</span>  
+           
+            <span class="title" id="game-menu">Games  
+              <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">
+                  <span class="dropbtn">
+                    <ion-icon name="chevron-down-outline"></ion-icon>
+                  </span>
+                </button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="#">Chess</a>
+                  <a href="#">Ludo</a>
+                  <a href="#">Scribble</a>
+                </div>
+              </div>
+          </span>
           </a>
       </li>
-      <li class="list">
+      <!-- <li class="list">
           <b></b>
           <b></b>
           <a href="#" >
@@ -52,7 +66,7 @@
             <span class="icon"><ion-icon name="game-controller-outline"></ion-icon></span>
             <span class="title">Chess</span>  
           </a>
-      </li>
+      </li> -->
       <li class="list">
           <b></b>
           <b></b>
@@ -108,6 +122,8 @@
 </div>
 <div class="login">
   <ion-icon name="person-outline"></ion-icon>
+</div>
+
 </div>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js "></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

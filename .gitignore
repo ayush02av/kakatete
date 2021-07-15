@@ -3,3 +3,5 @@ databaseupdate.py
 pushtogithub.py
 db.sqlite3
 staticfiles
+startmakingchanges.exe
+finishchangesandpush.exe

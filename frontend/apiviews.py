@@ -1,5 +1,5 @@
 from django.http import JsonResponse
-from main.models import Player, GameServer, GameServerMessage
+from database.models import Player, GameServer, GameServerMessage
 
 def Response(content={'Error':'Some Error'}):
 	return JsonResponse(content)

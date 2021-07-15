@@ -32,7 +32,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'main.apps.MainConfig',
+    'database.apps.DatabaseConfig',
     'frontend.apps.FrontendConfig',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -104,7 +104,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-AUTH_USER_MODEL = 'main.User'
+AUTH_USER_MODEL = 'database.User'
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.1/topics/i18n/

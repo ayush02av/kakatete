@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from main.models import *
+from database.models import *
 
 def Index(request):
 	return render(request, 'mainpage.html')

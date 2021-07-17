@@ -1,4 +1,6 @@
-
+var gameBox = document.getElementById("gamebox");
+var game = window.location.href.split("/")[4].split("=")[1].replace("#", "");
+gameBox.innerHTML = game;
 
 // let menuToggle = document.querySelector('.toggle');
 // let navigation = document.querySelector('.navigation');

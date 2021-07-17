@@ -1,0 +1,84 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+
+.top{
+	display: inline-flex;
+	justify-content: center;
+	text-align: center;
+	width: 100%;
+	height: 100px;
+	background: purple;
+	color: orange;
+}
+.top > ul{
+	display: inline-flex;
+}
+.top > ul > li{
+	margin: 0 150px;
+	margin-top: 10px;
+	line-height: 80px;
+	cursor: pointer;
+	font-size: 35px;
+}
+.top > ul > li:nth-child(2){
+	line-height: 40px;
+	cursor: initial;
+	font-size: 20px;
+}
+
+#game-menu-content{
+	display: none;
+	position: absolute;
+	width: 200px;
+	text-align: left;
+	margin-left: -50px;
+	margin-top: -25px;
+	font-size: 20px;
+}
+#game-menu-content > li{
+	padding-left: 20px;
+	background: black;
+	color: white;
+}
+#game-menu-content > li:hover{
+	background: green;
+	color: red;
+}
+
+.mid{
+	display: inline-flex;
+}
+
+.game-console{
+	background: green;
+	margin-left: 80px;
+	width: 1000px;
+	height: 600px;
+}
+
+.live-chat{
+	display: block;
+	background: green;
+	width: 300px;
+	height: 600px;
+	margin-left: 50px;
+}
+
+.live-chat > div{
+	width: 100%
+}
+
+.live-chat-messages{
+	height: 550px;
+	background: red;
+	overflow-y: scroll;
+}
+
+#message{
+	width: inherit;
+	height: 50px;
+}

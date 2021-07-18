@@ -20,3 +20,6 @@ def About(request):
 
 def Testing(request):
 	return render(request, 'testing.html')
+
+def Chess(request):
+	return render(request, 'chess.html')

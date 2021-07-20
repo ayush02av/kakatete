@@ -16,6 +16,10 @@ td{
 	text-align: center;
 }
 
+.cell{
+	font-size: 30px;
+	cursor: pointer;
+}
 .cell:hover{
 	background: grey;
 }

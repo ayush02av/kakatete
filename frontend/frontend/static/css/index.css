@@ -277,8 +277,8 @@ body{ background-color: white;
 }
 .container img{
 	border-radius: 10%;
-	width: 350px;
-	height: 300px;
+	width: 250px;
+	height: 200px;
 	/*border: 10px solid rgb(240, 119, 7);*/
     padding: 15px;
 }
@@ -339,3 +339,9 @@ body{ background-color: white;
   
   /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
   .show {display:block;}
+
+
+
+  /* tic tac toe */
+
+  

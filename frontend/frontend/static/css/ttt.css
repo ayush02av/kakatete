@@ -1,65 +1,84 @@
-* {margin: 0;
-   padding: 0; }
- 
-  .background{
-    background-color: black;
-    height: 100vh;
-    padding-top: 1px;
- } 
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Itim', cursive;
+}
 
- .title{
-   color: rgb(23, 74, 241);
-   text-align: center;
-   font-size: 40px;
-   margin-top: 10%;
- }
+.background {
+  background-color: #12181B;
+  height: 100vh;
+  padding-top: 1px;
+}
 
- .display{
-   color: rgb(8, 231, 64);
-   font-size: 25px;
-   text-align: center;
-   margin-top: 1em;
-   margin-bottom: 1em;
- }
+.title {
+  color: rgb(63, 17, 226);
+  text-align: center;
+  font-size: 40px;
+  margin-top: 10%;
+}
 
- .hide{
-   display: none;
- }
+.display {
+  color: rgb(177, 236, 14);
+  font-size: 25px;
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
 
- .container{
-   margin: 0 auto;
-   display: grid;
-   grid-template-columns: 33% 33% 33%;
-   grid-template-rows: 33% 33% 33%;
-   max-width: 300px;
- }
+.hide {
+  display: none;
+}
 
- .tile{
-   border: 1px solid rgb(19, 18, 18);
-   min-width: 100px;
-   min-height: 100px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   font-size: 50px;
-   cursor: pointer;
- }
+.container {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 33% 33% 33%;
+  max-width: 300px;
 
- .playerX {
-   color: green;
- }
+}
 
- .playerO{
-color: blue;
- }
+.tile {
+  border: 1px solid rgb(12, 12, 12);
+  min-width: 100px;
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  cursor: pointer;
+}
 
- #reset{
-   background-color: red;
-   color: white;
-   padding: 8px;
-   border-radius: 8px;
-   border: none;
-   font-size: 20px;
-   margin-left: 1em;
-   cursor: pointer;
- }
+.playerX {
+  color: #09C372;
+}
+
+.playerO {
+  color: #498AFB;
+}
+
+.controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
+}
+
+.controls button {
+  color: white;
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+  font-size: 20px;
+  margin-left: 1em;
+  cursor: pointer;
+}
+
+.restart {
+  background-color: #498AFB;
+}
+
+#reset {
+  background-color: #FF3860;
+}

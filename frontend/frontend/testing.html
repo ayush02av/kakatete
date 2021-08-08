@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kaka Tete - testing</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="/static/css/testing.css">
+</head>
+<body>
+
+	<div class="top">
+		<ul>
+			<li id="game-menu-container">
+				<span class="fa fa-bars" id="game-menu"></span>
+				<ul id="game-menu-content">
+					<li onclick="RedirectTo()">Home</li>
+					<li onclick="RedirectTo('/about/')">About Kaka-Tete</li>
+					<li>Games</li>
+				</ul>
+			</li>
+			<li>
+				<strong>KAKA-TETE ONLINE GAMING HUB</strong>
+				<br>
+				<small><i>Khelo, Mauj Karo, Aur Chalte Bano</i></small>
+			</li>
+			<li><span class="fa fa-user" id="user"></span></li>
+		</ul>
+	</div>
+
+	<div class="mid">
+		<div class="game-console">
+			game console
+		</div>
+		<div class="live-chat">
+			<div class="live-chat-messages">
+				Live Server Chat
+				<ul id="message-box">
+				</ul>
+			</div>
+			<div class="live-chat-message-input">
+				<input id="message" type="name" name="message" placeholder="Yaha Likhlo Message Apna" autocomplete="off" onkeydown="CheckSendMessage(event)">
+			</div>
+		</div>
+	</div>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="/static/js/testing.js"></script>
+</body>
+</html>

@@ -17,3 +17,9 @@ def Play(request):
 
 def About(request):
 	return render(request, 'about.html')
+
+def Testing(request):
+	return render(request, 'testing.html')
+
+def Chess(request):
+	return render(request, 'chess.html')

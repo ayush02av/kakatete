@@ -23,3 +23,6 @@ def Testing(request):
 
 def Chess(request):
 	return render(request, 'chess.html')
+
+def TicTacToe(request):
+	return render(request, 'tictactoe.html')

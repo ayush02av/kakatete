@@ -12,6 +12,7 @@ def Play(request):
 			except:
 				pass
 			else:
+				game = game.__str__().lower().replace(" ", "")
 				return render(request, 'index.html', {'game':game})
 	return redirect(Index)
 
@@ -26,3 +27,10 @@ def Chess(request):
 
 def TicTacToe(request):
 	return render(request, 'tictactoe.html')
+
+def Ludo(request):
+	return render(request, 'ludo.html')
+
+def TestingPlay(request, game):
+	game = game.__str__().lower().replace(" ", "")
+	return render(request, f'{game}.html')

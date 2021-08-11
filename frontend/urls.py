@@ -6,6 +6,5 @@ urlpatterns = [
     path('play/', Play),
     path('about/', About),
     path('testing/', Testing),
-    path('testing/chess/', Chess),
-    path('testing/tictactoe/', TicTacToe)
+    path('play/<str:game>/', TestingPlay)
 ]

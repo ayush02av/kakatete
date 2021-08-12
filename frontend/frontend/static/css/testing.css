@@ -6,7 +6,7 @@
 }
 body
 {
-    background-image: url(pic/image5.jpeg);
+    background-image: url("/static/images/image5.jpeg");
     image-resolution: 50%;
 }
 .navbar{
@@ -88,7 +88,7 @@ list-style: none;
 }
 .container{
     box-sizing: content-box;
-    background-image: url(pic/game.jpg);
+    background-image: url("/static/images/game.jpg");
     padding-top: 480px;
    padding-right: 800px;
    margin-left: 20px;

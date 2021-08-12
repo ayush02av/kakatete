@@ -1,0 +1,128 @@
+body{
+    margin: 0px;
+}
+.mainframe{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.ludoboard{
+    border: 5px solid black;
+    width: 600px;
+    height: 600px;
+    display: grid;
+    grid-template-columns: repeat(15,40px);
+    grid-template-rows: repeat(15,40px);
+}
+.red{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    border: 0.5px solid red;
+    grid-column: 1/7;
+    grid-row: 1/7;
+}
+.redsafe{
+    background-color: red;
+    border: 0.5px solid red;
+}
+.playerzone{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-gap: 50px;
+}
+.player{
+    border-radius: 50%;
+    background-color: white;
+    opacity: 0.9;
+    height: 50px;
+    width: 50px;
+}
+.green{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   background-color: rgb(18, 235, 18);
+   border: 0.5px solid rgb(18, 235, 18);
+   grid-column: 10/16;
+   grid-row: 1/7;
+}
+.greensafe{
+    background-color: rgb(18, 235, 18);
+    border: 0.5px solid rgb(18, 235, 18);
+}
+.blue{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   background-color: blue;
+   border: 0.5px solid blue;
+   grid-column: 1/7;
+   grid-row: 10/16;
+}
+.bluesafe{
+    background-color: blue;
+    border: 0.5px solid blue;
+}
+.yellow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+    border: 0.5px solid yellow;
+    grid-column: 10/16;
+    grid-row: 10/16;
+}
+.yellowsafe{
+    background-color: yellow;
+    border: 0.5px solid yellow;
+}
+.step{
+    border: 0.5px solid rgb(148, 146, 146);
+}
+.centerbox{
+    grid-column: 7/10;
+    grid-row: 7/10;
+    width: 0px;
+    height: 0px;
+    border-top: 60px solid rgb(18, 235, 18);
+    border-bottom: 60px solid blue;
+    border-left: 60px solid red;
+    border-right: 60px solid yellow;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    background: purple;
+    margin-left: calc(50% - 90px);
+    margin-top: 250px;
+}
+
+#img
+{
+    width: 150px;
+    height: 150px;
+}
+
+.btn
+{
+    width: 150px;
+    height: 40px;
+    margin: 20px;
+    font-size: 1.2rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}

@@ -2,6 +2,27 @@
 body{ background-color: white;
   }
 } */
+* {
+	padding: 0;
+	margin: 0;
+	font-family: 'Itim', cursive;
+  }
+  /* @keyframes background-animation{
+	0%{
+		background: lightblue;
+	}
+	70%{
+		background: lightyellow;
+	}
+} */
+
+body {
+	/* animation: background-animation 10s infinite; */
+	background-color: #e5e5f7;
+	opacity: 1;
+	background: radial-gradient(circle, transparent 20%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent) 15px 15px, linear-gradient(#36454F 1.2000000000000002px, transparent 1.2000000000000002px) 0 -0.6000000000000001px, linear-gradient(90deg, #36454F 1.2000000000000002px, #e5e5f7 1.2000000000000002px) -0.6000000000000001px 0;
+	background-size: 30px 30px, 30px 30px, 15px 15px, 15px 15px;
+}
 .navigation {
 	position: fixed;
 	top: 20px;
@@ -11,7 +32,7 @@ body{ background-color: white;
 	border-radius: 10px;
 	box-sizing: initial;
 	border-left: 5px solid blue;
-	background: rgb(19, 233, 151);
+	background: rgb(5,5,20);
 	font-size: large;
 	font-style: italic;
 	transition: width 0.5s;
@@ -36,7 +57,7 @@ body{ background-color: white;
 	border-bottom-left-radius: 20px;
   }
   .navigation ul li.active{
-	  background-color: ivory;
+	  background-color: rgb(23, 204, 250);
   }
   /* .navigation ul li b:nth-child(1){
 	  position: absolute;
@@ -87,10 +108,10 @@ body{ background-color: white;
 	width: 100%;
 	display: flex;
 	text-decoration: none;
-	color: rgb(5, 5, 5);
+	color: #E5E5F7;
   }
   .navigation ul li.active a{
-	  color: rgb(30, 15, 238);
+	  color: #E5E5F7;
   }
   .navigation ul li a .icon {
 	position: relative;
@@ -151,7 +172,7 @@ body{ background-color: white;
   .box{
     position: fixed;
     top: 90px;
-    background: rgb(19, 233, 151);
+    background: rgb(5,5,20);
     left: 350px;
     height: 600px;
     width: 800px;
@@ -160,7 +181,7 @@ body{ background-color: white;
 .chat{
     position: fixed;
     top: 90px;
-    background: rgb(19, 233, 151);
+    background: rgb(5,5,20);
     left: 1200px;
     height: 600px;
     width: 300px;
@@ -210,7 +231,7 @@ body{ background-color: white;
 	}
 	.box{
 		top: 10px;
-		background: rgb(19, 233, 151);
+		background: rgb(5,5,20);
 		left: 150px;
 		height: 500px;
 		width: 500px;
@@ -249,7 +270,7 @@ body{ background-color: white;
 	right: 20px;
 	width: 50px;
 	height: 50px;
-	background: rgb(19, 233, 151);
+	background: rgb(5,5,20);
 	border-radius: 10px;
 	cursor: pointer;
 	display: flex;
@@ -258,7 +279,7 @@ body{ background-color: white;
 }
 .login ion-icon{
 	position: absolute;
-	color:black ;   
+	color:#E5E5F7;   
 	font-size: 34px;
 }
 
@@ -277,8 +298,8 @@ body{ background-color: white;
 }
 .container img{
 	border-radius: 10%;
-	width: 350px;
-	height: 300px;
+	width: 250px;
+	height: 200px;
 	/*border: 10px solid rgb(240, 119, 7);*/
     padding: 15px;
 }
@@ -298,7 +319,7 @@ body{ background-color: white;
   
   /* Dropdown Button */
 .dropbtn {
-	background-color: #3498DB;
+	background-color: #E5E5F7;
 	color: white;
 	font-size: 16px;
 	border: none;
@@ -320,7 +341,7 @@ body{ background-color: white;
   .dropdown-content {
 	display: none;
 	position: relative;
-	background-color: rgb(19, 233, 151);
+	background-color: rgb(5,5,20);
 	min-width: 160px;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	z-index: 1;
@@ -339,3 +360,5 @@ body{ background-color: white;
   
   /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
   .show {display:block;}
+
+  

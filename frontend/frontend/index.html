@@ -43,6 +43,7 @@
                   <a href="#">Chess</a>
                   <a href="#">Ludo</a>
                   <a href="#">Scribble</a>
+                  <a href="#">Tic-Tac-Toe</a>
                 </div>
               </div>
           </span>
@@ -93,7 +94,7 @@
           <b></b>
           <a href="#" >
             <span class="icon"><ion-icon name="exit-outline"></ion-icon></span>
-            <span class="title">Prasthan Kariye(Exit)</span>  
+            <span class="title">Leave Server</span>  
           </a>
       </li>
     </ul>
@@ -104,7 +105,11 @@
     <ion-icon name="close-outline" class="close"></ion-icon>
 </div> -->
 <div class="box">
-  <span class="gamebox" id="gamebox"></span>
+  <span class="gamebox {{game}}" id="gamebox" style="color: white;">
+    <noscript>
+      Seems like you have turned off your javascript, Please Turn it ON to play games.
+    </noscript>
+  </span>
 </div>
 <div class="chat">
   <span class="chatting">msg here</span>
@@ -125,5 +130,17 @@
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js "></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 <script src="/static/js/index.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script type="text/javascript">
+
+function SetUpGameBoard(){
+  var gamebox = $("#gamebox");
+  game = document.getElementById("gamebox").classList[1];
+  gamebox.load("/play/"+game);
+}
+
+SetUpGameBoard();
+
+</script>
 </body>
 </html>

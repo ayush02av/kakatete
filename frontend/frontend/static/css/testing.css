@@ -1,84 +1,104 @@
-*{
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	text-decoration: none;
+*
+{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+body
+{
+    background-image: url(pic/image5.jpeg);
+    image-resolution: 50%;
+}
+.navbar{
+    width: 100%;
+    height: 100%;
+    background:#42455a;
+    text-align: center;
 }
 
-.top{
-	display: inline-flex;
-	justify-content: center;
-	text-align: center;
-	width: 100%;
-	height: 100px;
-	background: purple;
-	color: orange;
-}
-.top > ul{
-	display: inline-flex;
-}
-.top > ul > li{
-	margin: 0 150px;
-	margin-top: 10px;
-	line-height: 80px;
-	cursor: pointer;
-	font-size: 35px;
-}
-.top > ul > li:nth-child(2){
-	line-height: 40px;
-	cursor: initial;
-	font-size: 20px;
+.navbar ul{
+display: inline-flex;
+color:white;
+list-style: none;
 }
 
-#game-menu-content{
-	display: none;
-	position: absolute;
-	width: 200px;
-	text-align: left;
-	margin-left: -50px;
-	margin-top: -25px;
-	font-size: 20px;
-}
-#game-menu-content > li{
-	padding-left: 20px;
-	background: black;
-	color: white;
-}
-#game-menu-content > li:hover{
-	background: green;
-	color: red;
+.navbar ul li{
+    width: 100px;
+    margin: 10px;
+    padding: 10px;
 }
 
-.mid{
-	display: inline-flex;
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
 }
 
-.game-console{
-	background: green;
-	margin-left: 80px;
-	width: 1000px;
-	height: 600px;
-}
 
-.live-chat{
-	display: block;
-	background: green;
-	width: 300px;
-	height: 600px;
-	margin-left: 50px;
+.option, .navbar ul li:hover{
+    background-color: #666699;
+    border-radius: 4px;
 }
-
-.live-chat > div{
-	width: 100%
+.profile{
+    display: none;
 }
-
-.live-chat-messages{
-	height: 550px;
-	background: red;
-	overflow-y: scroll;
+.navbar ul li:hover .profile
+{
+    display: block;
+    position: absolute;
+    background:#42455a;
+    margin-top: 10px;
+    margin-left: -10px;
 }
-
-#message{
-	width: inherit;
-	height: 50px;
+.navbar ul li:hover .profile ul{
+    display: block;
+}
+.games{
+    display: none;
+}
+.navbar ul li:hover .games
+{
+    display: block;
+    position: absolute;
+    background:#42455a;
+    margin-top: 10px;
+    margin-left: -10px;
+}
+.navbar ul li:hover .games ul{
+    display: block;
+}
+.sound-icon{
+    align-items: right
+;
+}
+.name{
+   
+    text-align:left;
+    display: inline-flex;
+    font-size: 25px;
+    font-family: 'Palette Mosaic', cursive ;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 30px;
+    color: darkgray;
+   
+}
+.content{
+    display: inline-flex;
+}
+.container{
+    box-sizing: content-box;
+    background-image: url(pic/game.jpg);
+    padding-top: 480px;
+   padding-right: 800px;
+   margin-left: 20px;
+   margin-top: 20px;
+}
+.message{
+    box-sizing: content-box;
+padding-top: 480px;
+background-image: linear-gradient( #98AFC7, #5E7D7E);
+padding-right: 220px;
+margin-top: 20px;
+margin-left: 10px;
 }

@@ -1,48 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Kaka Tete - testing</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="/static/css/testing.css">
-</head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home_Page</title>
+    <link rel="stylesheet" href="Untitled-1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Palette+Mosaic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 <body>
-
-	<div class="top">
-		<ul>
-			<li id="game-menu-container">
-				<span class="fa fa-bars" id="game-menu"></span>
-				<ul id="game-menu-content">
-					<li onclick="RedirectTo()">Home</li>
-					<li onclick="RedirectTo('/about/')">About Kaka-Tete</li>
-					<li>Games</li>
-				</ul>
-			</li>
-			<li>
-				<strong>KAKA-TETE ONLINE GAMING HUB</strong>
-				<br>
-				<small><i>Khelo, Mauj Karo, Aur Chalte Bano</i></small>
-			</li>
-			<li><span class="fa fa-user" id="user"></span></li>
-		</ul>
-	</div>
-
-	<div class="mid">
-		<div class="game-console">
-			game console
-		</div>
-		<div class="live-chat">
-			<div class="live-chat-messages">
-				Live Server Chat
-				<ul id="message-box">
-				</ul>
-			</div>
-			<div class="live-chat-message-input">
-				<input id="message" type="name" name="message" placeholder="Yaha Likhlo Message Apna" autocomplete="off" onkeydown="CheckSendMessage(event)">
-			</div>
-		</div>
-	</div>
-	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-	<script type="text/javascript" src="/static/js/testing.js"></script>
+    <div class="navbar">
+        <h2 class="name"> <i class="fas fa-dice-d20"></i>KaKatete</h2>
+        <ul> 
+          
+            <li class="option"><i class="fas fa-home"></i><a href="#"> Home</a></li>
+            <li><i class="fas fa-user"></i><a href="#"> Profile</a>
+            <div class="profile">
+                <ul>
+                    <li><i class="fas fa-eye"></i><a href="#"> View</a></li>
+                    <li><i class="fas fa-edit"></i><a href="#"> Edit</a></li>
+                </ul>
+            </div></li>
+            <li><i class="fas fa-gamepad"></i><a href="#"> Games</a>
+                <div class="games">
+                    <ul>
+                        <li><i class="fas fa-chess"></i><a href="#"> Chess</a></li>
+                        <li><i class="fas fa-signature"></i><a href="#"> Skrible</a></li>
+                        <li><i class="fas fa-dice"></i><a href="#"> Ludo</a></li>
+                        <li><i class="fas fa-users"></i><a href="#"> Tic Tac Toe</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><i class="fas fa-share-alt"></i><a href="#"> Share</a></li>
+            <li><i class="fas fa-cog"></i><a href="#"> Settigs</a></li>
+            <li><i class="fas fa-book"></i><a href="#"> About</a></li>
+            <div class="sound-icon">
+            <li class="sound"><i class="fas fa-volume-up"></i></li>
+        </div>
+        </ul>
+    </div>
+    <div class="content">
+    <div class="container">
+     Game-Console
+    </div>
+    <div class="message">
+        send message
+    </div>
+</div>
 </body>
 </html>

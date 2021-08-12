@@ -59,7 +59,7 @@ body {
   .navigation ul li.active{
 	  background-color: rgb(23, 204, 250);
   }
-  /* .navigation ul li b:nth-child(1){
+  * .navigation ul li b:nth-child(1){
 	  position: absolute;
 	  top: -20px;
 	  height: 20px;

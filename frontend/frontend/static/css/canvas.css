@@ -2,19 +2,23 @@ body{
     margin: 0px;
     padding: 30px;
     overflow: hidden;
-    background: rgb(63, 62, 62);
+    background: #c98b06;
 }
 
 canvas{
     box-shadow: -3px 2px 9px 6px;
     cursor: pointer;
+    position: relative;
+    margin-left: calc(50% - 500px);
+    top: 100px;
 }
 
 .tools{
     display: flex;
     justify-content: center;
     flex-direction: row;
-    margin-top: 15px;
+    margin-top: 120px;
+    
 }
 
 .tools .stroke_color {
@@ -41,12 +45,13 @@ canvas{
     background: #222;
     font-weight: bold;
     margin: 0 10px;
+    
 }
 
 .stroke_color{
     align-self: center;
     margin: 0 10px;
-    height: 50px;
+    height: 40px;
 }
 
 .pen-range{
@@ -54,3 +59,51 @@ canvas{
     margin: 0 10px;
 }
 
+.participants{
+    position: absolute;
+    height: 500px;
+    width: 250px;
+    top: 125px;
+    left: 10px;
+    font-size: large;
+    align-content: center;
+    background: #36454F;
+    border-radius: 10px;
+}
+
+.pheading{
+    background-color: darkgray;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+}
+.heading{
+    position: absolute;
+    font-size: 50px;
+    align-content: center;
+    top: 10px;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    background-color: chartreuse;      
+}
+
+.ans{
+    position: absolute;
+    background: #36454F;
+    height: 500px;
+    width: 265px;
+    right: 10px;
+    top: 125px;
+    border-radius: 10px;
+}
+
+.header{
+    position: absolute;
+    background: #36454F;
+    height:40px;
+    width: 1520px;
+    top: 80px;
+    left: 10px;
+    border-radius: 10px;
+}

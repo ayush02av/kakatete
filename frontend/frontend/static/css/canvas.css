@@ -2,22 +2,23 @@ body{
     margin: 0px;
     padding: 30px;
     overflow: hidden;
-    background: #c98b06;
+    background : rgba(32, 32, 32, 1);
 }
 
 canvas{
     box-shadow: -3px 2px 9px 6px;
     cursor: pointer;
     position: relative;
-    margin-left: calc(50% - 500px);
-    top: 100px;
+    margin-left: calc(50% - 700px);
+    top: 117px;
+    border-radius: 14px;
 }
 
 .tools{
     display: flex;
     justify-content: center;
     flex-direction: row;
-    margin-top: 120px;
+    margin-top: 130px;
     
 }
 
@@ -60,19 +61,30 @@ canvas{
 }
 
 .participants{
-    position: absolute;
-    height: 500px;
-    width: 250px;
-    top: 125px;
-    left: 10px;
+  
     font-size: large;
-    align-content: center;
-    background: #36454F;
-    border-radius: 10px;
+    display: inline-flex; 
+    position: absolute;  
+    top: 80px;
+    left: 60px;
+}
+
+.participants > div {
+   height: 50px;
+   width: 50px;
+   border-radius: 50%;
+   background: rgba(209, 198, 198, 1);
+   border: 2px solid white;
+   margin: 0 10px;
+   align-items: center;
+   
+}
+.participants :hover{
+    background: chartreuse;
 }
 
 .pheading{
-    background-color: darkgray;
+    color: darkgray;
     align-items: center;
     text-align: center;
     position: fixed;
@@ -81,29 +93,39 @@ canvas{
     position: absolute;
     font-size: 50px;
     align-content: center;
-    top: 10px;
+    top: 15px;
     justify-content: center;
     justify-items: center;
     text-align: center;
-    background-color: chartreuse;      
+    color: aliceblue;  
+       
 }
 
 .ans{
     position: absolute;
-    background: #36454F;
-    height: 500px;
+    background : rgba(209, 198, 198, 1);
+    height: 440px;
     width: 265px;
-    right: 10px;
-    top: 125px;
-    border-radius: 10px;
+    right: 150px;
+    top: 147px;
+    border-radius: 14px;
+    opacity: 1;
+}
+
+.textbox{
+    position: absolute;
+    bottom: 0;
+    justify-content: center;
+    width: 80px;
 }
 
 .header{
     position: absolute;
-    background: #36454F;
-    height:40px;
-    width: 1520px;
-    top: 80px;
-    left: 10px;
-    border-radius: 10px;
+    border:2px solid aliceblue ;
+    font-size: 33px;
+    height:auto;
+    width: auto;
+    top: 40px;
+    left: 600px;
+    color: aliceblue;
 }

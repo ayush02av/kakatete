@@ -14,10 +14,10 @@
            <button onclick="Restore()" type="button" class="button">Undo</button>
            <button onclick="Clear()" type="button" class="button">Clear</button>
 
-           <div onclick="change_color(this)" class="stroke_color" style="background:red ;"></div>
-           <div onclick="change_color(this)" class="stroke_color" style="background: blue;"></div>
-           <div onclick="change_color(this)" class="stroke_color" style="background: green;"></div>
-           <div onclick="change_color(this)" class="stroke_color" style="background: yellow;"></div>
+           <div onclick="change_color = 'red' " class="stroke_color" style="background:red ;"></div>
+           <div onclick="change_color = 'blue' " class="stroke_color" style="background: blue;"></div>
+           <div onclick="change_color = 'green' " class="stroke_color" style="background: green;"></div>
+           <div onclick="change_color = 'yellow' " class="stroke_color" style="background: yellow;"></div>
 
            <input oninput="change_color = this.value" type="color" class="stroke_color">
            <input type="range" min="1" max="100" class="pen-range" oninput="change_width = this.value">

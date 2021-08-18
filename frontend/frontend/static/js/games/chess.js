@@ -64,5 +64,23 @@ function SetupBoard(){
 SetupBoard();
 
 $(".cell").click(function(){
-	alert("clicked cell "+this.getAttribute("id"));
+	//alert("clicked cell "+this.getAttribute("id"));
+	if(this.innerHTML != ""){
+		// alert(this.innerHTML);
+		$("#log").html(this.innerHTML);
+	}
 });
+
+
+class Piece{
+	constructor(color, pieceName, startX, startY){
+		this.color = color;
+		this.pieceName = pieceName;
+		this.xcor = startX;
+		this.ycor = startY;
+	}
+}
+
+let piece = new Piece("black", pawn, 0, 0);
+
+$("#log").html(piece.pieceName);

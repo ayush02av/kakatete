@@ -3,6 +3,10 @@
 	padding: 0;
 }
 
+body{
+	background: black;
+}
+
 .chess-grid{
 	width: 415px;
 	height: 415px;
